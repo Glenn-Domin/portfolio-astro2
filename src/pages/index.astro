@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/LayoutHome.astro';
+---
+
+<Layout title="Lead Frontend Developer | Glenn Jacobson">
+    <main>
+        <div class="home-intro">
+            <h2 class="display-1">For the love <br>of the craft</h2>
+            <p>A Frontend Developer who cares about performance, semantics, aesthetics, UX, and accessibility.</p>
+        </div>
+    </main>
+</Layout>
+
+<style lang="scss">
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+    }
+
+    .home-intro {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2,
+        p {
+            animation-name: enter;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            transform: translateX(130px);
+            animation-duration: 0.5s;
+        }
+
+        p {
+            max-width: 52rem;
+            animation-delay: 0.05s;
+        }
+    }
+</style>
