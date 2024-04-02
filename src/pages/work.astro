@@ -6,13 +6,15 @@ const images = [
           name: 'pedders',
           label: "Pedders Suspension",
           sub: 'Magento B2C and B2B site.',
-          path: '/images/pedders-lg.webp'
+          path: '/images/pedders-lg.webp',
+          link: '/work/pedders'
         },
         {
           name: 'peak',
           label: "Peak Marketing",
           sub: 'Magento e-commerce site.',
-          path: '/images/peak-lg-op.jpg'
+          path: '/images/peak-lg-op.jpg',
+          link: '/work/peak'
         },
         {
           name: 'teds',
@@ -70,7 +72,7 @@ const images = [
                 <section class="item"
                         style={`background-image: url('${image.path}')`}
                 >
-                    <a class="item-link">
+                    <a class="item-link" href={image.link}>
                         <div class="item-content">
                             <h2 class="item-title">{ image.label }</h2>
                             <div class="item-subtitle">{ image.sub }</div>
