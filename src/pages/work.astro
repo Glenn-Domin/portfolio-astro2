@@ -77,7 +77,9 @@ const images = [
         <section class="case-listing">
             {images.map((image) => (
                 <section class="item"
-                        style={`background-image: url('${image.path}')`}
+                        style={
+                          `background-image: url('${image.path}'); view-transition-name: image-${image.name}`
+                        }
                 >
                     <a class="item-link" href={image.link}>
                         <div class="item-content">
